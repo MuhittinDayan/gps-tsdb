@@ -1,0 +1,27 @@
+{
+  "name": "gps-tsdb",
+  "version": "1.0.0",
+  "description": "MongoDB time-series GPS telematics: ingest, retention tiers, simulator and reports",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "setup": "node setup.js",
+    "simulate": "node simulator.js",
+    "report": "node reports.js",
+    "summarize": "node summaries.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\""
+  },
+  "dependencies": {
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
